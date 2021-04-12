@@ -25,8 +25,34 @@
         <dt>
             @Html.DisplayNameFor(model => model.EnrollmentDate)
         </dt>
+
+
         <dd>
             @Html.DisplayFor(model => model.EnrollmentDate)
+        </dd>
+        
+        @*//P24*@
+        <dt>
+            @Html.DisplayNameFor(model => model.Enrollments)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th> Course Title</th>
+                    <th>Grade</th>
+                </tr>
+                @foreach (var item in Model.Enrollments)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(ModelItem => item.Course.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(ModelItem => item.Grade)
+                        </td>
+                    </tr>
+                }
+            </table>
         </dd>
     </dl>
 </div>
