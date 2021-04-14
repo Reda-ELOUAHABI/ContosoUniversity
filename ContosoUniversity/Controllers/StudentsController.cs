@@ -37,7 +37,7 @@ namespace ContosoUniversity.Controllers
 
             switch (sortOrder)
             {
-                case "namedesc":
+                case "name_desc":
                     students = students.OrderByDescending(s => s.LastName);
                     break;
                 case "Date":
@@ -47,7 +47,7 @@ namespace ContosoUniversity.Controllers
                     students = students.OrderByDescending(s => s.EnrollmentDate);
                     break;
                 default:
-                    students = students.OrderByDescending(s => s.EnrollmentDate);
+                    students = students.OrderByDescending(s => s.LastName);
                     break;
             }
            return View(await students.AsNoTracking().ToListAsync()); 
