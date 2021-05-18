@@ -15,6 +15,15 @@ namespace ContosoUniversity.Data
         public static void Initialize(SchoolContext context)
 
         {
+
+            /*
+             Lorsque vous avez démarré l’application, la méthode DbInitializer.
+            Initialize appelle EnsureCreated. EF a vu qu’il n’y avait pas de base de données 
+            et en a donc créé une, puis le reste du code de la méthode Initialize a rempli 
+            la base de données avec des données. 
+            Vous pouvez utiliser l’Explorateur d’objets SQL Server (SSOX) 
+            pour afficher la base de données dans Visual Studio.
+             */
             context.Database.EnsureCreated();
 
             // Look for any students.
