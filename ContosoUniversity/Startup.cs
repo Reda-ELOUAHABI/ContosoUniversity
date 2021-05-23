@@ -28,7 +28,7 @@ namespace ContosoUniversity
             services.AddDbContext<SchoolContext>(options =>
              options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
           
-            services.AddDatabaseDeveloperPageExceptionFilter();
+            services.AddDatabaseDeveloperPageExceptionFilter();//show sql exceptions with more destails
             services.AddControllersWithViews();
         }
 
@@ -58,6 +58,16 @@ namespace ContosoUniversity
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //Severity	Code	Description	Project	File	Line	Suppression State
+            // Warning MVC1005 Using 'UseMvc' to configure MVC is not supported while using Endpoint Routing. To continue using 'UseMvc', please set 'MvcOptions.EnableEndpointRouting = false' inside 'ConfigureServices'.ContosoUniversity   C: \Users\Reda El Ouahabi\Desktop\Desktop\ContosoUniversity\ContosoUniversity\Startup.cs 61  Active
+
+     /*       app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });*/
         }
     }
 }
