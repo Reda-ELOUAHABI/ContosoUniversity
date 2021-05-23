@@ -302,3 +302,4 @@ C:\Users\Reda El Ouahabi\Desktop\Desktop\ContosoUniversity\ContosoUniversity\obj
 C:\Users\Reda El Ouahabi\Desktop\Desktop\ContosoUniversity\ContosoUniversity\obj\Debug\net5.0\ref\ContosoUniversity.dll
 C:\Users\Reda El Ouahabi\Desktop\Desktop\ContosoUniversity\ContosoUniversity\obj\Debug\net5.0\ContosoUniversity.pdb
 C:\Users\Reda El Ouahabi\Desktop\Desktop\ContosoUniversity\ContosoUniversity\obj\Debug\net5.0\ContosoUniversity.genruntimeconfig.cache
+C:\Users\Reda El Ouahabi\Desktop\Desktop\ContosoUniversity\ContosoUniversity\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
